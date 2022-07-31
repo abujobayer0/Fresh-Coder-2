@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
-    margin: 0%;
+    margin: 0px;
     padding: 0%;
 }
 body{
@@ -48,6 +48,7 @@ border-radius: 0px 12.0139px 12.0139px 0px;
     font-size: 38px;
     font-family: 'Poppins', sans-serif;
         font-weight: 500;
+  
 } 
 .bg img{
 width: 100%;
@@ -86,8 +87,13 @@ height: 450px;
 .nav>ul{
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
-    margin-left:50px; 
+    float:right;
+   
+    width: 490px;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 0;
+    border-radius: 25px;
 }
  .login{
     background-color: #fff;
@@ -110,6 +116,9 @@ height: 450px;
    padding-right: 28px;
    padding-top: 08px;
    padding-bottom:08px;
+   transition: 0.2s ease;
+   box-shadow: 10px 10px 15px 0px #65E4A3;
+   transition: 0.5s ease;
 }
  ul>li>a{
     text-decoration: none;
@@ -119,15 +128,23 @@ height: 450px;
 font-weight: 400;
     margin-right: 2px;
     padding: 10px 20px ;
-  
-} 
-ul>li>a:hover{
+    transition: 0.5s ease;
+    z-index: 10;
+}  ul>li>a:hover{
     background-color: #fff;
     color: #294763;
     border-radius: 25px;
     padding: 8px 20px ;
-    
-}
+    transition: 0.5s ease;
+    z-index: 10;
+    box-shadow: -10px 10px 15px 0px #65E4A3;
+    transition: 0.5s ease;
+} 
+
+
+
+
+
 .paragraph-heading-button{
     position:absolute ;
     top: 170px;
@@ -151,8 +168,8 @@ ul>li>a:hover{
 } 
 .btn1{
     width: 270px;
-    padding-top:19px ;
-    padding-bottom:19px ;
+    padding-top:17px ;
+    padding-bottom:17px ;
     margin-top: 20px;
     border-radius: 30px; 
  background-color:#65E4A3 ;
@@ -167,7 +184,11 @@ ul>li>a:hover{
     padding-bottom:17px ;
     background-color: transparent;
     color: #fff;
-    border:2px solid white;
+    border:1px solid white;
+    transition: 1s ease;
+    box-shadow: 10px 10px 15px 0px #65E4A3;
+    transition: 0.5s ease;
+
 }
 .btn2{
     width: 200px;
@@ -183,10 +204,13 @@ ul>li>a:hover{
     border-radius: 40px;
 } 
 .btn2:hover{
-    background-color:#65E4A3 ;   
-    padding-top:21px ;
-    padding-bottom:21px ;
-    border: none;
+       
+    padding-top:19px ;
+    padding-bottom:19px ;
+    border: 2px solid white;
+    box-shadow: 10px 10px 15px 0px #65E4A3 ;
+    transition: 0.5s ease;
+
 }
 .footer-img img{
     width: 94%;
@@ -218,7 +242,7 @@ opacity: 80%;
 }
 .person{
     display: flex;
-  
+   
 
     width: 1100px;
     align-items:center ;
@@ -254,9 +278,12 @@ opacity: 80%;
         
 }
 .pp>a:hover{
-    animation: identifier 1s linear 0s  alternate ;
+    animation: identifier 1s ease 0s  alternate ;
     background-color: #294763;
     color: #fff;
+    box-shadow: 10px 10px 15px 0px #294763;
+    transition: 0.5s ease;
+   
 }
 @keyframes identifier {
     from{
@@ -315,6 +342,10 @@ margin-left: 100px;
 #ii:hover{
 background-color: #294763;
 color: #fff;
+transition: 0.5s ease;
+box-shadow: 10px 10px 15px 0px #65E4A3;
+transition: 0.5s ease;
+
 }
 .half-cs2>li{
     font-family: 'Poppins', sans-serif;       font-weight: 500;
@@ -388,7 +419,8 @@ color: #fff;
     padding-right: 0px;
     border-radius: 5px;
     margin-bottom: 10px;
-  border:1px solid rgb(223, 222, 222);
+  /* border:1px solid rgb(223, 222, 222); */
+  box-shadow: 1px 1px 5px rgb(5, 5, 5);
 }
 #feather{
     color: #fff;
@@ -402,6 +434,14 @@ color: #fff;
     border-radius: 5px;
     margin-bottom: 10px;
     border: none;
+}
+#feather:hover{
+    background-color: white;
+    color: #294763;
+    transition: 0.5s ease;
+    box-shadow: 10px 10px 15px 0px #65E4A3;
+    transition: 0.5s ease;
+   
 }
 .fa-solid{
     padding-right: 15px;
@@ -425,6 +465,8 @@ color: #fff;
     background-color: #29476300;
     color: #294763;
     border: 2px solid #294763;
+    box-shadow: 10px 10px 15px 0px #65E4A3;
+    transition: 0.5s ease;
 
 }
 .half-cs3>img
@@ -563,6 +605,9 @@ margin-left: 150px;
    padding-top: 15px;
    
 }
+.under-section-b>h3:hover{
+    box-shadow: 2px 1px 2px 0px ;
+}
 .section-a{
     margin-bottom: 80px;
 }
@@ -618,10 +663,20 @@ opacity: 90%;
 .c{
     padding-top: 18px;
 }
+
+.ss>h2,h3{
+    margin-left: 15px;
+}
 .ss{
     margin-bottom: 80px;
-    box-shadow: 3px 2px 1px 1px rgb(212, 206, 206);
+    box-shadow: 3px 2px 5px 1px rgb(212, 206, 206);
     border-radius: 25px;
+    height: 387px;
+
+}
+.ss:hover{
+    background-image: linear-gradient(#2947634b , white);
+      color: #000000;
 }
 .btnloadmore{
     text-align: center;
@@ -641,7 +696,17 @@ font-size: 18px;
     border-radius: 30px;
     margin-bottom: 80px;
     color:  rgb(16, 59, 99);
-}.blue{
+}
+.btnloadmore:hover{
+    background-color: #294763;
+    color: white;
+    transition: 0.5s ease;
+    box-shadow: 10px 10px 15px 0px #65E4A3;
+    transition: 0.5s ease;
+   
+
+}
+.blue{
     background-color: rgb(10,38,64);
     height: 280px;
     margin-left: 70px;
@@ -680,6 +745,11 @@ position: relative;
 left: 260px;
 top: 200px;
 }
+#email:hover{
+    box-shadow: 10px 10px 15px 0px #e465de;
+    transition: 0.5s ease;
+   
+}
 .btnst{
     background-color: #65E4A3;
 width: 200px;
@@ -693,6 +763,16 @@ border-radius: 50px;
 position: relative;
 left: 280px;
 top: 200px;
+
+}
+.btnst:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    box-shadow: 10px 10px 15px 0px #e465de;
+    transition: 0.5s ease;
+   
 
 }
 .container{
@@ -813,7 +893,312 @@ padding-bottom: 2px;
 border-radius: 15px;
 margin-left: 5px;
 }
+.lnda>span:hover{
+box-shadow: 1px 1px 5px 0px;
+  
+}
 .fa-arrow-right{
     font-size: 15px;
     padding-left: 5px;
+}
+.llll:hover{
+    box-shadow: 10px 10px 10px 0px #e465de;
+    transition: 0.5s ease;
+   
+}
+.llll{
+    padding-right:5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+.playone{
+    display: block;
+    height: 440px;
+    justify-content: center;
+      display: flex;
+      width: 1265px;
+      justify-content: space-between;
+      align-items: center;
+     float: left;
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 50%,rgba(5, 255, 59, 0.527));
+     position: absolute;
+     z-index: 0;
+}
+.play{
+    height: 440px;
+  justify-content: center;
+    display: flex;
+    width: 1250px;
+    justify-content: space-between;
+    align-items: center;
+   float: left;
+
+   position: absolute;
+   
+}
+.playtwo{
+    height: 440px;
+  justify-content: center;
+    display: flex;
+    width: 1250px;
+    justify-content: space-between;
+    align-items: center;
+   float: left;
+   
+   position: absolute;
+   
+}
+.ball{
+    width: 8px;
+    height: 8px;
+    background-color: #294763;
+    border-radius: 50px;
+    transform: translate(-50,-50);
+        margin-right: 2px;
+        float: left;
+       
+  
+}
+.w{
+    animation: ballw 4s linear 0.5S infinite alternate ;
+    background-color:#65E4A3;
+    box-shadow: 10px 10px 10px 0px #65E4A3;
+}
+.z{
+    animation: ballz 5s linear 0.5S infinite alternate ;
+    background-color: #294763;
+    box-shadow: 10px 10px 10px 0px #294763;
+}
+.y{
+    animation: bally 4s linear 0.5S infinite alternate ;
+    background-color: #ff0000;
+    box-shadow: 10px 10px 10px 0px #fd0000;
+}
+@keyframes ballz
+ {
+    from{
+        position: relative;
+        bottom: 250px;
+        opacity: 50%;
+    }
+    to{
+        position: relative;
+        bottom: 0px;
+    }
+}
+@keyframes ballw
+ {
+    from{
+        position: relative;
+        bottom:0px;
+        opacity: 50%;
+    }
+    to{
+        position: relative;
+        bottom: 250px;
+    }
+}
+@keyframes bally
+{from{
+        position: relative;
+        bottom: 250px;
+        opacity: 50%;
+    }
+    to{
+        position: relative;
+        bottom:0px;
+    }
+}
+.wa{
+    animation: ballwa 8s linear 0.5S infinite alternate ;
+    background-color:#ff9100;
+    box-shadow: 10px 10px 10px 0px #ff9100;
+}
+.za{
+    animation: ballza 6s linear 0.5S infinite alternate ;
+    background-color: #0084ff;
+    box-shadow: 10px 10px 10px 0px #0084ff;
+}
+.ya{
+    animation: ballya 8s linear 0.5S infinite alternate ;
+    background-color: #ff00ea;
+    box-shadow: 10px 10px 10px 0px #ff00ea;
+}
+@keyframes ballza
+ {
+    from{
+        position: relative;
+        bottom:-200px;
+        opacity: 50%;
+    }
+    to{
+        position: relative;
+        bottom: 250px;
+    }
+}
+@keyframes ballwa
+ {
+    from{
+        position: relative;
+        bottom: 250px;
+        opacity: 50%;
+    }
+    to{
+        position: relative;
+        bottom:-200px;
+    }
+}
+@keyframes ballya
+{from{
+        position: relative;
+        bottom:-200px;
+        opacity: 50%;
+    }
+    to{
+        position: relative;
+        bottom: 250px;
+    }
+}
+.ov{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left: 850px;
+    background-color: transparent;
+   
+    top: 100px;
+    border-radius: 30px;
+    margin-bottom: 80px;
+   width: 400px;
+    height: 45px;
+    z-index:0;
+}
+
+
+
+
+.wb{
+    animation: ballwb 9s linear 0.5S infinite alternate ;
+    background-color:#ff606000;
+    box-shadow: 50px 230px 15px 0px #000000;
+    transition: 1s ease;
+}
+.zb{
+    animation: ballzb 10s linear 0.5S infinite alternate ;
+    background-color: rgba(52, 255, 69, 0);
+    box-shadow: 50px 230px 15px 0px #000000;
+    transition: 1s ease;
+
+}
+.yb{
+    animation: ballyb 11s linear 0.5S infinite alternate ;
+    background-color: rgba(90, 87, 255, 0);
+    box-shadow: 50px 230px 15px 0px #000000;
+    transition: 1s ease;
+
+}
+@keyframes ballzb
+ {
+    from{
+        position: relative;
+        bottom: -4400px;
+        opacity: 50%;
+        right: 450px;
+    }
+    to{
+        position: relative;
+        bottom: -4100px;
+        right: 450px;
+    }
+}
+@keyframes ballwb
+ {
+    from{
+        position: relative;
+        bottom:-4400px;
+        opacity: 50%;
+        right: 80px;
+    }
+    to{
+        position: relative;
+        bottom: -4100px;
+        right: 80px;
+    }
+}
+@keyframes ballyb
+{from{
+        position: relative;
+        bottom: -4400px;
+        opacity: 50%;
+        right: 830px;
+    }
+    to{
+        position: relative;
+     
+        bottom:-4100px;
+        right: 830px;
+    }
+}
+.wa{
+    animation: ballwa 8s linear 0.5S infinite alternate ;
+    background-color:#ff9100;
+    box-shadow: 10px 10px 10px 0px #ff9100;
+}
+.za{
+    animation: ballza 6s linear 0.5S infinite alternate ;
+    background-color: #0084ff;
+    box-shadow: 10px 10px 10px 0px #0084ff;
+}
+.ya{
+    animation: ballya 7s linear 0.5S infinite alternate ;
+    background-color: #ff00ea;
+    box-shadow: 10px 10px 10px 0px #ff00ea;
+}
+@keyframes ballza
+ {
+    from{
+        position: relative;
+        bottom:-200px;
+        opacity: 50%;
+    }
+    to{
+        position: relative;
+        bottom: 250px;
+    }
+}
+@keyframes ballwa
+ {
+    from{
+        position: relative;
+        bottom: 250px;
+        opacity: 50%;
+    }
+    to{
+        position: relative;
+        bottom:-200px;
+    }
+}
+@keyframes ballya
+{from{
+        position: relative;
+        bottom:-200px;
+        opacity: 50%;
+    }
+    to{
+        position: relative;
+        bottom: 250px;
+    }
 }
